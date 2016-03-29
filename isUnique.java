@@ -7,6 +7,13 @@
 import java.util.*;
 
 public class isUnique{
+	public static void main(String[] args) {
+		String[] words = {"kkc"};
+		for (String word : words) {
+			System.out.println(word + ": " + isUniqueChars(word));
+		}
+	}
+	// A public method that belongs to the isUnique class and returns a boolean value. The method isUniqueChars takes in a string
 	public static boolean isUniqueChars(String str){
 		if (str.length() > 128) return false;
 
@@ -19,11 +26,5 @@ public class isUnique{
 			char_set[val] = true;
 		}
 		return true;
-	}
-	public static void main(String[] args) {
-		String[] words = {"kkc"};
-		for (String word : words) {
-			System.out.println(word + ": " + isUniqueChars(word));
-		}
 	}
 }
