@@ -1,66 +1,19 @@
-//Practice from Building Java Programs (UW Practice-IT)
-
-///////////////////////////////////////
-///////////////////////////////////////
-//All odd numbers from -6 to 38
-///////////////////////////////////////
-///////////////////////////////////////
-// int[] odds = new int[22];
-// for(i=0; i<22; i++){
-// 	odds[i] = i * 2 -5;
-// }
-
-// ///////////////////////////////////////
-// ///////////////////////////////////////
-// //Example of storing entries in an array
-// ///////////////////////////////////////
-// ///////////////////////////////////////
-
-// public class GameEntry{
-// 	private String name; //Name of the person earning the score
-// 	private int score; //The value of the score
-
-// 	//A GameEntry constructor with given parameters
-// 	public GameEntry(String n, int s){
-// 		name = n;
-// 		score = s;
-// 	}
-// 	//A method that returns the name field
-// 	public String getName(){
-// 		return name;
-// 	}
-
-// 	//A method that returns score field
-// 	public getScore(){
-// 		return score;
-// 	}
-
-// 	//A method that returns a string representation of the entry
-// 	public String toString(){
-// 		return"(" + name + ", "+ score + ")";
-// 	}
-// }
-
-
-
-// ///////////////////////////////////////
-// ///////////////////////////////////////
-// //Finding the k'th largest frequency
-// ///////////////////////////////////////
-// ///////////////////////////////////////
-
-
 // ///////////////////////////////////////
 // ///////////////////////////////////////
 // //Reversing a string
 // ///////////////////////////////////////
 // ///////////////////////////////////////
+
 public class reverseString {
  public static void main(String[] args) {
-    String input = "I like your smile";
+    String input = "kelin";
+    //Switches from string to an array of characters(individual letters)
     char[] temparray= input.toCharArray();
+    //Set up variables for the left and right most values so that I can keep track of their indices.
     int left,right=0;
+    //The right variable is given the index value of temparray.length - 1.
     right=temparray.length-1;
+    //As long as the left is lt the right, this for loop persists.
     for (left=0; left < right ; left++ ,right--)
     {
      // Swap values of left and right 
@@ -68,6 +21,7 @@ public class reverseString {
      temparray[left] = temparray[right];
      temparray[right]=temp;
     }
+    //For each character in the temporary array, I first print out each character.
     for (char c : temparray)
      System.out.print(c);
     System.out.println();
