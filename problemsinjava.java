@@ -48,6 +48,7 @@ public class GameEntry{
 
 public class StringPermutation {
 
+
     public List<String> permute(char input[]) {
         Map<Character, Integer> countMap = new TreeMap<>();
         for (char ch : input) {
@@ -102,5 +103,35 @@ public class StringPermutation {
         sp.permute("AABC".toCharArray()).forEach(s -> System.out.println(s));
     }
 }
+
+///////////////////////////////////////
+///////////////////////////////////////
+//Finding the k'th largest frequency
+///////////////////////////////////////
+///////////////////////////////////////
+
+
+///////////////////////////////////////
+///////////////////////////////////////
+//Reversing a string
+///////////////////////////////////////
+///////////////////////////////////////
+public class reverseString {
+ public static void main(String[] args) {
+    String input = "I like your smile";
+    char[] temparray= input.toCharArray();
+    int left,right=0;
+    right=temparray.length-1;
+    for (left=0; left < right ; left++ ,right--)
+    {
+     // Swap values of left and right 
+     char temp = temparray[left];
+     temparray[left] = temparray[right];
+     temparray[right]=temp;
+    }
+    for (char c : temparray)
+     System.out.print(c);
+    System.out.println();
+   }}
 
 
