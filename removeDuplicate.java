@@ -1,6 +1,6 @@
 //Remove Dupes
-
 import java.util.*;
+
 public class removeDuplicate{
 	public String remove(String inputString){
 	String result = "";

@@ -20,7 +20,7 @@ public class Rotation {
 	}
 	
 	public static void main(String[] args) {
-		String[][] pairs = {{"pear", "rpea"}, {"bottle", "bottle"}, {"obscura", "curaobs"}};
+		String[][] pairs = {{"pear", "reap"}, {"bottle", "bottle"}, {"obscura", "curaobs"}};
 		for (String[] pair : pairs) {
 			String word1 = pair[0];
 			String word2 = pair[1];
